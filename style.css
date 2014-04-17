@@ -1,0 +1,140 @@
+body{
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  background: #444;
+}
+
+a:link{color:#fff;}
+a:visited{color:#fff;}
+a:hover{color:#fff;}
+a:active{color:#fff;}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+textarea {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+button{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+fieldset{
+  width: 97%;
+  float: center;
+  border: 0px;
+  padding-left: 10px;
+}
+
+h1{
+  font-size: 35px;
+  padding-bottom: 6px;
+  color: #fff;
+}
+
+h2{
+  font-size: 30px;
+  padding-bottom: 6px;
+  color: #fff;
+}
+
+p{
+  font-size: 20px;
+  color: #fff;x
+}
+
+#header{
+  height: 70px;
+  background: #f00;
+  font-size: 35px;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+#footer{
+  height: 70px;
+  width: 100%;
+  background: #f00;
+  bottom: 0px;
+  left: 0px;
+  font-size: 35px;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: fixed;
+  padding-top: 20px;
+}
+
+input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input{
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+  border: none;
+	width: 328px;
+}
+
+textarea {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+textarea{
+	background-color: #eee;
+  border: none;
+	color: #777;
+	padding: 4px 10px;
+  resize: none;
+	width: 328px;
+}
+
+input[type="button"] {
+	background-color: #f00;
+	color: #fff;
+	display: block;
+	padding: 4px 0;
+	width: 100px;
+}
+
+input[type="button"]:hover {
+	background-color: #33cc77;
+}
+
+button {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+button{
+	background-color: #f00;
+	color: #fff;
+	display: block;
+	padding: 4px 0;
+  border: none;
+	width: 100px;
+}
+
+button:hover {
+	background-color: #f00;
+}
