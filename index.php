@@ -26,7 +26,6 @@ News Page with simple CMS
         $text1=$row['news'];
     }
 
-
     $query2=mysql_query("SELECT * FROM $tbl_name WHERE id='2'");
     $numrows2=mysql_num_rows($query2);
 
@@ -34,7 +33,6 @@ News Page with simple CMS
         $title2=$row['title'];
         $text2=$row['news'];
     }
-
 
     $query3=mysql_query("SELECT * FROM $tbl_name WHERE id='3'");
     $numrows3=mysql_num_rows($query3);
@@ -44,29 +42,28 @@ News Page with simple CMS
         $text3=$row['news'];
     }
 
+    $amount=mysql_query("SELECT COUNT(*) FROM $tbl_name");
+    $amount=$amount-3;
+
+    for($i="1"; $i<"$amount"; $i++){
+            ${'query'."$i"}=mysql_query('SELECT * FROM $tbl_name WHERE id="$i"');
+            ${'numrows'."$i"}=mysql_num_rows(${'query'."$i"});
+
+    if($row=mysql_fetch_assoc(${'query'."$i"})){
+            ${'title'."$i"}=$row['title'];
+            ${'text'."$i"}=$row['news'];
+    }
+
     Echo "
     <h2>
-    $title1
+    ${'title'."$i"}
     </h2>
     <p>
-    $text1
+    ${'text'."$i"}
     </p>
     <hr>
-    <h2>
-    $title2
-    </h2>
-    <p>
-    $text2
-    </p>
-    <hr>
-    <h2>
-    $title3
-    </h2>
-    <p>
-    $text3
-    </p>
-    <br>
-    "
+    ";
+    }
 
     ?>
   </fieldset>
