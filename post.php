@@ -4,6 +4,11 @@ include('db.php');
 $title=$_POST['title'];
 $text=$_POST['text'];
 
+if($title=="" && $text==""){
+	$title="you wrote nothing in any of the fields";
+	$text="you wrote nothing in any of the fields";
+}
+
 $query=mysql_query("SELECT * FROM $tbl_name WHERE id='1'");
 $numrows=mysql_num_rows($query);
 

@@ -18,6 +18,7 @@ News Page with simple CMS
 <form action="post.php" method="POST">
   <fieldset>
 
+				<p>If wanting to go to a new line use the < BR > tag please (no spaces between the "<" and the words)! You can also use other html5 tags.<br><br>Example: "I love cheese, < br > (no spaces) I like milk"<br><br>
       <p><input name="title" id="title" type="text" placeholder="Title"></p>
 			<p><textarea name="text" id="text" type="password" placeholder="Text"></textarea></p>
 			<p><button id="login">Post</button></p>
